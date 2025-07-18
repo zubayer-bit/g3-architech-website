@@ -191,13 +191,29 @@ main{
         flex-direction: column;
         background-color: red;
     }
-    .team-picture-container{
+    .team-picture-container, .facts-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .our-features{
         margin-left: 20px;
     }
-    
+
+    .facts-container{
+        justify-items: center;
+        margin-bottom: 2px;
+    }
+    .fact-card{
+        margin-top: 22px;
+    }
+    .some-facts-title{
+        margin: 0 auto;
+    }
+    .some-facts-description{
+        width: 100%;
+        text-align: center;
+    }
+
+
 }
 
 /* medium size device */
