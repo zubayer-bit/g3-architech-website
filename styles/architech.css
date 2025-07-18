@@ -8,3 +8,88 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* shared styles */
+.primary-bg{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.display-flex{
+    display: flex;
+}
+
+.primary-btn{
+    width: 181px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: rgba(255, 144, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    /* button ke rr responsive kora hoa nai padding px ai dicci */
+    padding: 20px 25px; 
+
+}
+/* dark 01 */
+.text-dark-01{
+    color: rgba(19, 19, 19, 1);
+}
+/* dark 02 */
+.text-gray{
+    color: #424242;
+}
+/* dark 03 */
+.text-gray-light{
+    color: #727272;
+}
+/* header styles */
+
+/* nav bar related styles */
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    color: ;
+}
+
+.navbar, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner part */
+.banner-contain{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
+.banner-image{
+    width: 100%;
+}
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .nav-links, .navbar{
+        flex-direction: column;
+        background-color: red;
+    }
+}
