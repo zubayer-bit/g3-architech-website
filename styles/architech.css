@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.work-sans-font, .card-title, .card-description {
+.work-sans-font, .card-title, .card-description, .footer-title {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -47,7 +47,7 @@ main>section{
     color: rgba(19, 19, 19, 1);
 }
 /* dark 02 */
-.text-gray{
+.text-gray, .footer-title{
     color: #424242;
 }
 /* dark 03 */
@@ -292,6 +292,35 @@ main{
 .sponspors-company img{
     filter: grayscale(100%);
 }
+/* our sponsors */
+.Our-Sponspors{
+    margin-bottom: 0px;
+}
+
+/* footer part */
+.footer-section{
+    /* justify-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    /* max-width: 1440px; */
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.footer-div{
+    /* border: 2px solid tomato; */
+    background-color: rgba(255, 244, 231, 1);
+    margin-top: 130px;
+    padding-top: 39px;
+    padding-bottom: 38px;
+    margin-bottom: 130px;
+
+}
+.footer-title{
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 0 auto;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .nav-links, .navbar, .team, .feature-section {
@@ -320,7 +349,8 @@ main{
     }
     .button-experience{
         margin-top: 20px;
-        margin-left: 90px;
+        margin-left: 33px;
+        margin-right: 33px;
        
     }
     .fact-card{
