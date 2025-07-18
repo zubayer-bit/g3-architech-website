@@ -150,7 +150,7 @@ main{
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
+    margin: 40px 50px 0px;
     
 }
 
@@ -185,13 +185,45 @@ main{
     height: 45px;
     margin-top: 45px;
 }
+
+/* Our Sponspors part */
+.Sponspors{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.Sponspors-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-top: 180px;
+    margin-bottom: 0px;
+}
+
+.Sponspors-description{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.sponspors-company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 50px;
+   
+}
+
+.sponspors-company img{
+    filter: grayscale(100%);
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .nav-links, .navbar, .team {
         flex-direction: column;
         background-color: red;
     }
-    .team-picture-container, .facts-container{
+    .team-picture-container, .facts-container, .sponspors-company{
         grid-template-columns: repeat(1, 1fr);
     }
     .our-features{
@@ -201,6 +233,11 @@ main{
     .facts-container{
         justify-items: center;
         margin-bottom: 2px;
+    }
+    .sponspors-company{
+        justify-items: center;
+        margin: 0 auto;
+        gap: 24px;
     }
     .fact-card{
         margin-top: 22px;
@@ -223,5 +260,29 @@ main{
     }
     .our-features{
         margin: 50px auto;
+    }
+
+    .sponspors-company{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px;
+        justify-items: center;
+        margin: 0 auto;
+    }
+
+    .some-facts-title{
+        margin: 0 auto;
+    }
+    .some-facts-description{
+        width: 100%;
+        text-align: center;
+    }
+
+    .facts-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin: 0 auto;
+        
     }
 }
