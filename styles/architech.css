@@ -10,6 +10,9 @@
 }
 
 /* shared styles */
+main>section{
+    margin-top: 130px;
+}
 .primary-bg{
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -28,7 +31,12 @@
     font-weight: 600;
     /* button ke rr responsive kora hoa nai padding px ai dicci */
     padding: 20px 25px; 
+    margin-top: 30px;
 
+}
+/* orange color */
+.orange-color{
+    color: rgba(255, 144, 14, 1);
 }
 /* dark 01 */
 .text-dark-01{
@@ -43,7 +51,10 @@
     color: #727272;
 }
 /* header styles */
-
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /* nav bar related styles */
 .brand{
     font-weight: 700;
@@ -85,11 +96,60 @@
 .banner-image{
     width: 100%;
 }
+/* team and feature style */
+.team{
+    align-items: center;
+    margin: 40px 50px 0px 50px;
+}
+.team-picture-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
 
+.our-features{
+    margin-left: 73px;
+    max-width: 537px;
+}
+
+
+.quick-list{
+    font-weight: 500;
+    font-size: 2.8rem;
+    
+
+}
+
+.of-our{
+    font-weight: 700;
+    font-size: 2.8rem;
+    padding-left: 0.438rem;
+}
+.features-text{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 /* responsive media query */
-@media screen and (max-width:576px) {
-    .nav-links, .navbar{
+@media screen and (max-width: 576px) {
+    .nav-links, .navbar, .team {
         flex-direction: column;
         background-color: red;
+    }
+    .team-picture-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+    
+}
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .team{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
     }
 }
