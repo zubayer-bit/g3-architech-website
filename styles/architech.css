@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.work-sans-font {
+.work-sans-font, .card-title, .card-description {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
+
 
 /* shared styles */
 main>section{
@@ -34,12 +36,14 @@ main>section{
     margin-top: 30px;
 
 }
+
+
 /* orange color */
 .orange-color{
     color: rgba(255, 144, 14, 1);
 }
 /* dark 01 */
-.text-dark-01{
+.text-dark-01, .card-title{
     color: rgba(19, 19, 19, 1);
 }
 /* dark 02 */
@@ -47,7 +51,7 @@ main>section{
     color: #424242;
 }
 /* dark 03 */
-.text-gray-light{
+.text-gray-light, .card-description{
     color: #727272;
 }
 /* header styles */
@@ -96,6 +100,55 @@ main{
 .banner-image{
     width: 100%;
 }
+
+/* features will enjoy */
+.feature-section{
+    gap: 245px;
+    margin-bottom: 30px;
+}
+.top-left-line{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+}
+.feature-section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    max-width: 468px;
+}
+
+.feature-section-description{
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 586px;
+    margin-bottom: 30px;
+}
+
+.feature-card{
+    max-width: 586px;
+    max-height: 171px;
+    border-radius: 8px;
+    /* border: 1px solid teal; */
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    
+    margin-bottom: 20px;
+    padding: 30px 42px 30px 30px;
+
+}
+
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 30;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.card-description{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
 /* team and feature style */
 .team{
     align-items: center;
@@ -130,7 +183,29 @@ main{
     font-weight: 700;
 }
 
+.feature-image img{
+    width: 100%;
+}
+
 /* Some Facts part */
+.button-experience{
+    background-color: rgba(255, 144, 14, 1);
+    padding: 46px 42px 45px 42px;
+    border-radius: 8px;
+    border: none;
+    margin-top: -133px;
+    margin-left: -86px;
+}
+.ten-years{
+    font-size: 4.063rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+.Experience{
+    font-size: 1.563rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
 .some-facts-title{
     font-size: 2.8rem;
     font-weight: 700;
@@ -219,11 +294,11 @@ main{
 }
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .nav-links, .navbar, .team {
+    .nav-links, .navbar, .team, .feature-section {
         flex-direction: column;
-        background-color: red;
+       
     }
-    .team-picture-container, .facts-container, .sponspors-company{
+    .team-picture-container, .facts-container, .sponspors-company {
         grid-template-columns: repeat(1, 1fr);
     }
     .our-features{
@@ -238,6 +313,15 @@ main{
         justify-items: center;
         margin: 0 auto;
         gap: 24px;
+    }
+    /* feature-section */
+    .feature-image{
+        justify-items: center;
+    }
+    .button-experience{
+        margin-top: 20px;
+        margin-left: 90px;
+       
     }
     .fact-card{
         margin-top: 22px;
@@ -255,7 +339,7 @@ main{
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .team{
+    .team, .feature-section {
         flex-direction: column;
     }
     .our-features{
@@ -285,4 +369,20 @@ main{
         margin: 0 auto;
         
     }
+    /* feature section */
+    .features{
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .feature-section-title{
+        margin-right: 160px;
+    }
+    .feature-image{
+        margin-top: -193px;
+    }
+    .button-experience{
+        margin-top: 20px;
+        margin-left: 278px;
+    }
 }
+
